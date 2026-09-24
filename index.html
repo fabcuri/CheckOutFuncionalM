@@ -4,17 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
-   <div>
+   <div id="card">
     <div>
         <h1>CheckOut de Compras</h1>
     </div>
-    <div>
+    <div id="inputs">
         <label for="">Preço do Produto (R$)</label>
         <input type="text" placeholder="Ex:100,00">
         <label for="">Valor do Frete (R$)</label>
         <input type="text" placeholder="Ex:15,00">
+    </div>
+    <div>
+        <h3>Forma de Pagamento:</h3>
+    </div>
+    <div id="botoes">
+       
+        <div>
+            <input type="submit" value="PIX(-10%)">
+            <input type="submit" value="Dinheiro(-5%)">
+        </div>
+        <div>
+            <input type="submit" value="Cartão à Vista">
+            <input type="submit" value="Parcelado(+5%)">
+        </div>
     </div>
    </div> 
 </body>
