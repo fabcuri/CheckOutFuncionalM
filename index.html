@@ -15,7 +15,7 @@
         <label for="">Preço do Produto (R$)</label>
         <input type="text" placeholder="Ex:100,00" id="preco">
         <label for="">Valor do Frete (R$)</label>
-        <input type="text" placeholder="Ex:15,00" id="frete"
+        <input type="text" placeholder="Ex:15,00" id="frete">
     </div>
     <div>
         <h3>Forma de Pagamento:</h3>
@@ -23,16 +23,16 @@
     <div id="botoes">
        
         <div  id="botao1">
-            <input type="submit" value="PIX(-10%)" id="b1" onclick="pagarComPix()">
-            <input type="submit" value="Dinheiro(-5%)" id="b2" onclick="pagarComDinheiro()">
+            <input type="submit" value="PIX(-10%)" id="b1" onclick="pagamento('Pix')">
+            <input type="submit" value="Dinheiro(-5%)" id="b2" onclick="pagamento('Dinheiro')">
         </div>
         <div id="botao2">
-            <input type="submit" value="Cartão à Vista" id="b3" onclick="pagarComCartao()">
-            <input type="submit" value="Parcelado(+5%)" id="b4" onclick="pagarParcelado()">
+            <input type="submit" value="Cartão à Vista" id="b3" onclick="pagamento('Cartao')">
+            <input type="submit" value="Parcelado(+5%)" id="b4" onclick="pagamento('Parcelado')">
         </div>
     </div>
     <div>
-        <p>Forma:</p>
+        <p id="forma">Forma:</p>
         <p id="resultado">Total:</p>
     </div>
     
